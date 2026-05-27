@@ -5,7 +5,7 @@ import { CHECKOUT_URL_BASIC, CHECKOUT_URL_PREMIUM, PRICE_BASIC, PRICE_PREMIUM, P
 
 const basicFeatures = {
   included: [
-    "100 treinos de FutVôlei",
+    "100 treinos de Futevôlei",
     "Acesso pelo app",
     "Organização por nível",
     "Garantia de 30 dias",

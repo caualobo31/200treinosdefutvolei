@@ -30,7 +30,7 @@ export function Identification() {
               lineHeight: 1.1,
             }}
           >
-            Se voce e professor de futvôlei, provavelmente ja viveu isso:
+            Se voce e professor de futevôlei, provavelmente ja viveu isso:
           </h2>
         </RevealOnScroll>
 

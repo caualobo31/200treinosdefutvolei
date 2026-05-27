@@ -37,7 +37,7 @@ export function Hero() {
                   backgroundColor: "rgba(255,107,26,0.08)",
                 }}
               >
-                Para Professores de FutVôlei
+                Para Professores de Futevôlei
               </span>
             </div>
 
@@ -109,7 +109,7 @@ export function Hero() {
                   className="text-xs font-bold uppercase tracking-widest mb-4 text-center"
                   style={{ color: "var(--color-accent)" }}
                 >
-                  +100 Treinos de FutVôlei
+                  +100 Treinos de Futevôlei
                 </div>
                 <div
                   className="text-sm font-semibold mb-3"

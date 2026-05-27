@@ -2,7 +2,7 @@ import { BookOpen, Layers, Smartphone, Printer, Infinity, Gift } from "lucide-re
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 
 const included = [
-  { icon: <BookOpen className="w-5 h-5" />, text: "+100 Treinos Completos de FutVôlei", value: "Valor R$197" },
+  { icon: <BookOpen className="w-5 h-5" />, text: "+100 Treinos Completos de Futevôlei", value: "Valor R$197" },
   { icon: <Layers className="w-5 h-5" />, text: "Organização por 5 Eixos de Demanda", value: "Diferencial exclusivo" },
   { icon: <Smartphone className="w-5 h-5" />, text: "Acesso pelo App — Celular, tablet ou desktop", value: "" },
   { icon: <Printer className="w-5 h-5" />, text: "Treinos Imprimíveis em 1 Página A4 — Pra usar na areia sem celular", value: "" },

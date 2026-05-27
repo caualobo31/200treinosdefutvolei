@@ -14,7 +14,7 @@ export function Footer() {
           className="font-display text-xl uppercase tracking-widest mb-4"
           style={{ color: "var(--color-accent)" }}
         >
-          +100 Treinos de FutVolei
+          +100 Treinos de Futevolei
         </div>
 
         <p

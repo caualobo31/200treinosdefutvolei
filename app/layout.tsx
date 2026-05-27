@@ -17,14 +17,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "+100 Treinos de FutVôlei | Aulas Prontas Pra Professores",
+  title: "+100 Treinos de Futevôlei | Aulas Prontas Pra Professores",
   description:
-    "Pare de inventar exercício às 22h. +100 treinos de futvôlei prontos, organizados por demanda. Pra professor que quer aula engajada e aluno fiel.",
-  keywords: ["futvôlei", "treinos", "professor", "arena", "aula pronta", "futebol de praia"],
+    "Pare de inventar exercício às 22h. +100 treinos de futevôlei prontos, organizados por demanda. Pra professor que quer aula engajada e aluno fiel.",
+  keywords: ["futevôlei", "treinos", "professor", "arena", "aula pronta", "futebol de praia"],
   openGraph: {
-    title: "+100 Treinos de FutVôlei | Aulas Prontas Pra Professores",
+    title: "+100 Treinos de Futevôlei | Aulas Prontas Pra Professores",
     description:
-      "Pare de inventar exercício às 22h. +100 treinos de futvôlei prontos, organizados por demanda. Pra professor que quer aula engajada e aluno fiel.",
+      "Pare de inventar exercício às 22h. +100 treinos de futevôlei prontos, organizados por demanda. Pra professor que quer aula engajada e aluno fiel.",
     type: "website",
     locale: "pt_BR",
     // images: [{ url: "/og-image.png", width: 1200, height: 630 }],
