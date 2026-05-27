@@ -50,10 +50,10 @@ export function Hero() {
                 color: "var(--color-text-light)",
               }}
             >
-              <span style={{ color: "var(--color-accent)" }}>+100 TREINOS</span>
-              {" "}DE FUTVÔLEI QUE FAZEM O ALUNO PEDIR PRA{" "}
+              <span style={{ color: "var(--color-accent)" }}>+200 TREINOS</span>
+              {" "}DE FUTEVÔLEI PRONTOS PARA VOCÊ NUNCA MAIS{" "}
               <span style={{ color: "var(--color-accent)" }}>REPETIR</span>
-              {" "}NA PRÓXIMA AULA
+              {" "}A MESMA AULA
             </h1>
 
             {/* Sub-headline */}
@@ -61,8 +61,8 @@ export function Hero() {
               className="text-lg sm:text-xl mb-8 max-w-2xl mx-auto lg:mx-0"
               style={{ color: "rgba(250,250,247,0.75)", lineHeight: 1.6 }}
             >
-              Acabe com a aula repetitiva, engaje qualquer turma e tenha seu próximo treino
-              pronto em 30 segundos — sem inventar exercício às 22h da noite.
+              Encontre em segundos o treino ideal por nível do aluno, tamanho da turma,
+              tempo de aula, objetivo e cenário.
             </p>
 
             {/* CTA primário */}

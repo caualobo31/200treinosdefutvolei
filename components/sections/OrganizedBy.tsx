@@ -63,8 +63,7 @@ export function OrganizedBy() {
               className="text-lg max-w-2xl mx-auto"
               style={{ color: "rgba(250,250,247,0.65)" }}
             >
-              Porque professor de arena não pensa "exercício de recepção". Pensa
-              "o que eu dou amanhã pra 4 alunos em 45 minutos".
+              Porque professor de futevôlei não pensa só em exercício de recepção. Ele pensa: o que eu aplico amanhã com 4 alunos, níveis diferentes e só 45 minutos?
             </p>
           </div>
         </RevealOnScroll>

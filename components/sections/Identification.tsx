@@ -2,13 +2,11 @@ import { AlertCircle, ArrowDown } from "lucide-react";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 
 const bullets = [
-  "Abrir o caderno em branco as 22h da noite tentando montar a aula de amanha",
-  "Sentir que ta dando o mesmo treino ha 3 semanas e ouvir aluno reclamar",
-  "Olhar a turma chegando e pensar: o que eu faco com iniciante e avancado juntos?",
-  "Ter aluno cancelando mensalidade sem dizer o motivo real (mas voce sabe)",
-  "Ver outro professor da arena com a turma cheia e pensar: o que ele ta fazendo diferente?",
-  "Inventar exercicio na hora porque esqueceu de planejar",
-  "Repetir exercicio porque nao tem repertorio novo na manga",
+  "Abrir o caderno em branco às 22h tentando montar a aula de amanhã",
+  "Sentir que está dando o mesmo treino há 3 semanas",
+  "Ter iniciante e avançado na mesma turma e não saber como adaptar",
+  "Inventar exercício na hora porque esqueceu de planejar",
+  "Perder aluno porque a aula começou a parecer repetitiva",
 ];
 
 export function Identification() {
@@ -16,7 +14,7 @@ export function Identification() {
     <section
       className="py-20 lg:py-32"
       style={{ backgroundColor: "var(--color-bg-alt-dark)" }}
-      aria-label="Identificacao com o professor"
+      aria-label="Identificação com o professor"
     >
       <div className="max-w-3xl mx-auto px-5 sm:px-8">
 
@@ -30,7 +28,7 @@ export function Identification() {
               lineHeight: 1.1,
             }}
           >
-            Se voce e professor de futevôlei, provavelmente ja viveu isso:
+            Se você é professor de futevôlei, provavelmente já viveu isso:
           </h2>
         </RevealOnScroll>
 
@@ -65,7 +63,7 @@ export function Identification() {
               lineHeight: 1.2,
             }}
           >
-            Nao é falta de talento. É falta de repertório organizado.
+            Não é falta de talento. É falta de repertório organizado.
           </div>
         </RevealOnScroll>
 
@@ -75,9 +73,9 @@ export function Identification() {
               href="#demo-app"
               className="inline-flex items-center gap-2 text-base font-semibold transition-colors duration-200"
               style={{ color: "var(--color-accent)" }}
-              aria-label="Ver a solucao"
+              aria-label="Ver a solução"
             >
-              Me mostra a solucao
+              Me mostra a solução
               <ArrowDown className="w-4 h-4 animate-bounce" aria-hidden="true" />
             </a>
           </div>
