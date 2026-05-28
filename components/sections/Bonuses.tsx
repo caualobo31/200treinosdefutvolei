@@ -71,7 +71,7 @@ export function Bonuses() {
             >
               Você recebe no acesso:
             </h3>
-            <ul className="space-y-4 mb-8" role="list">
+            <ul className="space-y-4" role="list">
               {included.map((item, i) => (
                 <li key={i} className="flex items-start gap-4">
                   <span style={{ color: "var(--color-accent)", marginTop: "2px", flexShrink: 0 }}>
@@ -91,17 +91,19 @@ export function Bonuses() {
                 </li>
               ))}
             </ul>
+          </div>
+        </RevealOnScroll>
 
-            {/* Mockup do app */}
-            <div className="flex justify-center">
-              <Image
-                src="/mockup ftv puro.png"
-                alt="Interface do app +200 Treinos de Futevôlei"
-                width={220}
-                height={440}
-                className="h-auto drop-shadow-xl"
-              />
-            </div>
+        {/* Mockup do app — fora do card */}
+        <RevealOnScroll delay={150}>
+          <div className="flex justify-center mb-10">
+            <Image
+              src="/mockup ftv puro.png"
+              alt="Interface do app +200 Treinos de Futevôlei"
+              width={240}
+              height={480}
+              className="h-auto drop-shadow-xl"
+            />
           </div>
         </RevealOnScroll>
 
