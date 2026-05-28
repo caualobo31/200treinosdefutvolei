@@ -9,4 +9,4 @@ export const PRODUCT_NAME = "+100 Treinos de Futevôlei";
 export const PRICE_BASIC = "R$17,90";
 export const PRICE_PREMIUM = "R$37,90";
 export const PRICE_PREMIUM_FROM = "R$87,00";
-export const GUARANTEE_DAYS = 30;
+export const GUARANTEE_DAYS = 15;

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { BookOpen, Layers, Smartphone, Printer, Infinity, Gift } from "lucide-react";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 
@@ -94,18 +93,6 @@ export function Bonuses() {
           </div>
         </RevealOnScroll>
 
-        {/* Mockup do app — fora do card */}
-        <RevealOnScroll delay={150}>
-          <div className="flex justify-center mb-10">
-            <Image
-              src="/mockup ftv puro.png"
-              alt="Interface do app +200 Treinos de Futevôlei"
-              width={240}
-              height={480}
-              className="h-auto drop-shadow-xl"
-            />
-          </div>
-        </RevealOnScroll>
 
         {/* Bônus */}
         <RevealOnScroll delay={200}>

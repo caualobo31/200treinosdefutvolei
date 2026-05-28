@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CheckCircle2, XCircle, Star } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
@@ -6,9 +7,8 @@ import { CHECKOUT_URL_BASIC, CHECKOUT_URL_PREMIUM, PRICE_BASIC, PRICE_PREMIUM, P
 const basicFeatures = {
   included: [
     "100 treinos de Futevôlei",
-    "Acesso pelo app",
     "Organização por nível",
-    "Garantia de 30 dias",
+    "Garantia de 15 dias",
   ],
   excluded: [
     "Sem bônus",
@@ -24,8 +24,8 @@ const premiumFeatures = [
   "BÔNUS 1: Aula com Pouco Aluno (R$67)",
   "BÔNUS 2: 40 Dinâmicas pra Engajar (R$47)",
   "BÔNUS 3: Pack Aula Tema (R$37)",
-  "BÔNUS 4: Atualizações Vitalícias (R$97)",
-  "Garantia de 30 dias",
+  "BÔNUS 4: Atualizações Periódicas (R$97)",
+  "Garantia de 15 dias",
 ];
 
 export function Pricing() {
@@ -75,6 +75,15 @@ export function Pricing() {
                 >
                   Plano Básico
                 </span>
+                <div className="flex justify-center my-4">
+                  <Image
+                    src="/mockup ftv puro.png"
+                    alt="Mockup Plano Básico"
+                    width={160}
+                    height={320}
+                    className="h-auto drop-shadow-lg"
+                  />
+                </div>
                 <div
                   className="font-display text-5xl mb-1"
                   style={{ color: "var(--color-text-light)" }}
@@ -152,6 +161,15 @@ export function Pricing() {
                 >
                   Plano Premium
                 </span>
+                <div className="flex justify-center my-4">
+                  <Image
+                    src="/mockup treinos ftv.png"
+                    alt="Mockup Plano Premium"
+                    width={160}
+                    height={320}
+                    className="h-auto drop-shadow-lg"
+                  />
+                </div>
                 <div className="text-sm line-through mb-1" style={{ color: "#ef4444" }}>
                   De {PRICE_PREMIUM_FROM}
                 </div>
