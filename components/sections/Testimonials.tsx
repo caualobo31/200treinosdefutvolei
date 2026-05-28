@@ -118,7 +118,7 @@ export function Testimonials() {
         {/* CTA */}
         <RevealOnScroll delay={300}>
           <div className="text-center mt-4">
-            <Button variant="primary" size="lg" href={CHECKOUT_URL_PREMIUM}>
+            <Button variant="primary" size="lg" href="#pricing">
               Quero meus treinos agora
             </Button>
           </div>

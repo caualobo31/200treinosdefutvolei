@@ -31,6 +31,7 @@ const premiumFeatures = [
 export function Pricing() {
   return (
     <section
+      id="pricing"
       className="py-20 lg:py-32"
       style={{ backgroundColor: "var(--color-bg-dark)" }}
       aria-label="Planos e preços"

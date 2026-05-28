@@ -143,7 +143,7 @@ export function FAQ() {
         {/* CTA final */}
         <RevealOnScroll delay={300}>
           <div className="text-center">
-            <Button variant="primary" size="lg" href={CHECKOUT_URL_PREMIUM}>
+            <Button variant="primary" size="lg" href="#pricing">
               Quero começar agora
             </Button>
           </div>

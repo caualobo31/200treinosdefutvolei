@@ -81,7 +81,7 @@ export function Hero() {
 
             {/* CTA primário */}
             <div className="mb-6">
-              <Button variant="primary" size="lg" href={CHECKOUT_URL_PREMIUM} fullWidth={false}>
+              <Button variant="primary" size="lg" href="#pricing" fullWidth={false}>
                 Quero meus treinos prontos
               </Button>
             </div>

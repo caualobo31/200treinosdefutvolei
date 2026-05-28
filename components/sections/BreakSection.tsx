@@ -99,7 +99,7 @@ export function BreakSection() {
 
         {/* CTA */}
         <div className="mb-5">
-          <Button variant="black" size="lg" href={CHECKOUT_URL_PREMIUM}>
+          <Button variant="black" size="lg" href="#pricing">
             Quero meu acesso agora
           </Button>
         </div>

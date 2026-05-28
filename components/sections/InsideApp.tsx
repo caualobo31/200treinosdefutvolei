@@ -107,7 +107,7 @@ export function InsideApp() {
         {/* CTA */}
         <RevealOnScroll delay={300}>
           <div className="text-center mt-10">
-            <Button variant="outline-sand" size="lg" href={CHECKOUT_URL_PREMIUM}>
+            <Button variant="outline-sand" size="lg" href="#pricing">
               Quero testar o app
             </Button>
           </div>
