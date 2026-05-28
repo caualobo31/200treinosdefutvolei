@@ -44,9 +44,9 @@ export function Hero() {
 
             {/* H1 */}
             <h1
-              className="font-display uppercase leading-none mb-6"
+              className="font-display uppercase leading-none mb-5"
               style={{
-                fontSize: "clamp(36px, 6vw, 72px)",
+                fontSize: "clamp(26px, 6vw, 68px)",
                 letterSpacing: "-0.02em",
                 color: "var(--color-text-light)",
               }}
@@ -59,17 +59,29 @@ export function Hero() {
 
             {/* Sub-headline */}
             <p
-              className="text-lg sm:text-xl mb-8 max-w-2xl mx-auto lg:mx-0"
+              className="text-base sm:text-lg mb-6 max-w-2xl mx-auto lg:mx-0"
               style={{ color: "rgba(250,250,247,0.75)", lineHeight: 1.6 }}
             >
               Encontre em segundos o treino ideal por nível do aluno, tamanho da turma,
               tempo de aula, objetivo e cenário.
             </p>
 
+            {/* Mockup — apenas mobile (abaixo da subheadline) */}
+            <div className="lg:hidden mb-6 mx-auto" style={{ maxWidth: "260px" }}>
+              <Image
+                src="/mockup treinos ftv.png"
+                alt="Interface do app +200 Treinos de Futevôlei mostrando os filtros de treino"
+                width={260}
+                height={520}
+                priority
+                className="w-full h-auto drop-shadow-2xl"
+              />
+            </div>
+
             {/* CTA primário */}
             <div className="mb-6">
               <Button variant="primary" size="lg" href={CHECKOUT_URL_PREMIUM} fullWidth={false}>
-                Quero meus +100 treinos
+                Quero meus +200 treinos
               </Button>
             </div>
 
@@ -92,8 +104,8 @@ export function Hero() {
             </div>
           </div>
 
-          {/* ─── Mockup do app ─── */}
-          <div className="flex-shrink-0 w-full max-w-xs lg:max-w-sm xl:max-w-md">
+          {/* ─── Mockup do app — apenas desktop (coluna lateral) ─── */}
+          <div className="hidden lg:flex flex-shrink-0 w-full max-w-sm xl:max-w-md">
             <div className="relative mx-auto" style={{ maxWidth: "380px" }}>
               <Image
                 src="/mockup treinos ftv.png"
