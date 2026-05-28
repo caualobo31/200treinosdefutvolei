@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Zap, ShieldCheck, Smartphone } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { CHECKOUT_URL_PREMIUM } from "@/lib/constants";
@@ -93,62 +94,16 @@ export function Hero() {
 
           {/* ─── Mockup do app ─── */}
           <div className="flex-shrink-0 w-full max-w-xs lg:max-w-sm xl:max-w-md">
-            {/* Substituir por: <Image src="/images/hero-mockup.png" alt="Interface do app +100 Treinos com filtros de treino" /> */}
-            <div
-              className="relative mx-auto rounded-3xl overflow-hidden shadow-2xl border"
-              style={{
-                borderColor: "rgba(255,107,26,0.3)",
-                backgroundColor: "var(--color-bg-card-dark)",
-                aspectRatio: "9/18",
-                maxWidth: "280px",
-              }}
-            >
-              {/* Mock da tela do app */}
-              <div className="p-4 h-full flex flex-col">
-                <div
-                  className="text-xs font-bold uppercase tracking-widest mb-4 text-center"
-                  style={{ color: "var(--color-accent)" }}
-                >
-                  +100 Treinos de Futevôlei
-                </div>
-                <div
-                  className="text-sm font-semibold mb-3"
-                  style={{ color: "var(--color-text-light)" }}
-                >
-                  O que você precisa hoje?
-                </div>
-                {["Por Nível do Aluno", "Por Tamanho da Turma", "Por Tempo de Aula", "Por Objetivo", "Por Cenário"].map((item) => (
-                  <div
-                    key={item}
-                    className="flex items-center gap-3 p-2.5 rounded-lg mb-2 text-sm"
-                    style={{
-                      backgroundColor: "rgba(255,107,26,0.1)",
-                      border: "1px solid rgba(255,107,26,0.2)",
-                      color: "var(--color-text-light)",
-                    }}
-                  >
-                    <div
-                      className="w-2 h-2 rounded-full flex-shrink-0"
-                      style={{ backgroundColor: "var(--color-accent)" }}
-                    />
-                    {item}
-                  </div>
-                ))}
-                <div
-                  className="mt-auto text-center py-2.5 px-4 rounded-lg text-sm font-bold uppercase tracking-wider"
-                  style={{
-                    backgroundColor: "var(--color-accent)",
-                    color: "var(--color-text-dark)",
-                  }}
-                >
-                  Sortear Treino do Dia
-                </div>
-              </div>
+            <div className="relative mx-auto" style={{ maxWidth: "380px" }}>
+              <Image
+                src="/mockup treinos ftv.png"
+                alt="Interface do app +200 Treinos de Futevôlei mostrando os filtros de treino"
+                width={380}
+                height={760}
+                priority
+                className="w-full h-auto drop-shadow-2xl"
+              />
             </div>
-            <p className="text-center text-xs mt-3" style={{ color: "rgba(250,250,247,0.35)" }}>
-              {/* Substituir pelo mockup real quando disponível */}
-              Preview do app (imagem definitiva em /public/images/hero-mockup.png)
-            </p>
           </div>
 
         </div>
