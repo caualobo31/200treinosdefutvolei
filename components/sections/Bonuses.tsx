@@ -4,7 +4,7 @@ import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 
 const included = [
   { icon: <BookOpen className="w-5 h-5" />, text: "+100 Treinos Completos de Futevôlei", value: "Valor R$197" },
-  { icon: <Layers className="w-5 h-5" />, text: "Organização por 5 Eixos de Demanda", value: "Diferencial exclusivo" },
+  { icon: <Layers className="w-5 h-5" />, text: "Organização por 5 Eixos de Demanda", value: "" },
   { icon: <Smartphone className="w-5 h-5" />, text: "Acesso pelo App — Celular, tablet ou desktop", value: "" },
   { icon: <Printer className="w-5 h-5" />, text: "Treinos Imprimíveis em 1 Página A4 — Pra usar na areia sem celular", value: "" },
   { icon: <Infinity className="w-5 h-5" />, text: "Acesso Vitalício", value: "" },
@@ -171,7 +171,7 @@ export function Bonuses() {
               style={{ color: "rgba(250,250,247,0.55)" }}
             >
               Valor total dos bônus:{" "}
-              <span className="line-through font-semibold">R$248</span>
+              <span className="line-through font-semibold" style={{ color: "#ef4444" }}>R$248</span>
             </p>
             <p
               className="font-display uppercase"

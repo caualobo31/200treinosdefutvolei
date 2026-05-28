@@ -152,7 +152,7 @@ export function Pricing() {
                 >
                   Plano Premium
                 </span>
-                <div className="text-sm line-through mb-1" style={{ color: "rgba(250,250,247,0.35)" }}>
+                <div className="text-sm line-through mb-1" style={{ color: "#ef4444" }}>
                   De {PRICE_PREMIUM_FROM}
                 </div>
                 <div
