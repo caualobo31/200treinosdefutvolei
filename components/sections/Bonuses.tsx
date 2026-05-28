@@ -81,8 +81,8 @@ export function Bonuses() {
                     <span style={{ color: "var(--color-text-light)" }}>{item.text}</span>
                     {item.value && (
                       <span
-                        className="ml-2 text-sm font-semibold"
-                        style={{ color: "rgba(250,250,247,0.45)" }}
+                        className="ml-2 text-sm font-semibold line-through"
+                        style={{ color: "#ef4444" }}
                       >
                         — {item.value}
                       </span>
@@ -146,8 +146,8 @@ export function Bonuses() {
                     {bonus.desc}
                   </div>
                   <div
-                    className="text-sm font-bold"
-                    style={{ color: "rgba(250,250,247,0.4)" }}
+                    className="text-sm font-bold line-through"
+                    style={{ color: "#ef4444" }}
                   >
                     Valor: {bonus.value}
                   </div>
