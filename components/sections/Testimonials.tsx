@@ -47,7 +47,7 @@ export function Testimonials() {
               lineHeight: 1.15,
             }}
           >
-            Você está entre os primeiros professores a ter acesso
+            Veja o que dizem:
           </h2>
         </RevealOnScroll>
 
@@ -57,8 +57,7 @@ export function Testimonials() {
             className="text-center text-base sm:text-lg mb-12 max-w-2xl mx-auto"
             style={{ color: "rgba(13,13,13,0.62)" }}
           >
-            Estamos liberando essa condição de lançamento para os primeiros professores
-            que querem testar a biblioteca de treinos antes do preço subir.
+            Seja o próximo professor a ter aulas novas sem esforço.
           </p>
         </RevealOnScroll>
 
