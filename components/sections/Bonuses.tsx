@@ -95,7 +95,7 @@ export function Bonuses() {
             {/* Mockup do app */}
             <div className="flex justify-center">
               <Image
-                src="/mockup treinos ftv.png"
+                src="/mockup ftv puro.png"
                 alt="Interface do app +200 Treinos de Futevôlei"
                 width={220}
                 height={440}
