@@ -54,14 +54,14 @@ export function InsideApp() {
                 lineHeight: 1.1,
               }}
             >
-              Por dentro do app: filtre, escolha, aplique.
+              Por dentro do material: filtre, escolha, aplique.
             </h2>
             <p
               className="text-lg max-w-2xl mx-auto"
               style={{ color: "rgba(13,13,13,0.65)" }}
             >
-              Não é PDF gigante. Não é vídeo solto no YouTube. É um app onde você acha
-              o treino certo em 30 segundos.
+              Não é treino aleatório. Não é vídeo solto do YouTube. É um acervo completo
+              onde você acha o treino certo em 30 segundos.
             </p>
           </div>
         </RevealOnScroll>

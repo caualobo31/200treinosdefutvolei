@@ -29,10 +29,11 @@ export function Hero() {
           {/* ─── Coluna de texto ─── */}
           <div className="flex-1 text-center lg:text-left">
             {/* Tag superior */}
-            <div className="inline-flex items-center gap-2 mb-6">
+            <div className="inline-flex items-center gap-2 mb-4">
               <span
-                className="text-xs font-bold uppercase tracking-[0.2em] px-4 py-1.5 rounded-full border"
+                className="font-bold uppercase tracking-[0.18em] px-3 py-1 rounded-full border"
                 style={{
+                  fontSize: "10px",
                   color: "var(--color-accent)",
                   borderColor: "rgba(255,107,26,0.4)",
                   backgroundColor: "rgba(255,107,26,0.08)",
@@ -46,7 +47,7 @@ export function Hero() {
             <h1
               className="font-display uppercase leading-none mb-5"
               style={{
-                fontSize: "clamp(26px, 6vw, 68px)",
+                fontSize: "clamp(32px, 8vw, 68px)",
                 letterSpacing: "-0.02em",
                 color: "var(--color-text-light)",
               }}
@@ -67,7 +68,7 @@ export function Hero() {
             </p>
 
             {/* Mockup — apenas mobile (abaixo da subheadline) */}
-            <div className="lg:hidden mb-6 mx-auto" style={{ maxWidth: "260px" }}>
+            <div className="lg:hidden mb-6 mx-auto" style={{ maxWidth: "320px" }}>
               <Image
                 src="/mockup treinos ftv.png"
                 alt="Interface do app +200 Treinos de Futevôlei mostrando os filtros de treino"
@@ -81,7 +82,7 @@ export function Hero() {
             {/* CTA primário */}
             <div className="mb-6">
               <Button variant="primary" size="lg" href={CHECKOUT_URL_PREMIUM} fullWidth={false}>
-                Quero meus +200 treinos
+                Quero meus treinos prontos
               </Button>
             </div>
 
