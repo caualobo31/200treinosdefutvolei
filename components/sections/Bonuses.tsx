@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { BookOpen, Layers, Smartphone, Printer, Infinity, Gift } from "lucide-react";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 
@@ -70,7 +71,7 @@ export function Bonuses() {
             >
               Você recebe no acesso:
             </h3>
-            <ul className="space-y-4" role="list">
+            <ul className="space-y-4 mb-8" role="list">
               {included.map((item, i) => (
                 <li key={i} className="flex items-start gap-4">
                   <span style={{ color: "var(--color-accent)", marginTop: "2px", flexShrink: 0 }}>
@@ -90,6 +91,17 @@ export function Bonuses() {
                 </li>
               ))}
             </ul>
+
+            {/* Mockup do app */}
+            <div className="flex justify-center">
+              <Image
+                src="/mockup treinos ftv.png"
+                alt="Interface do app +200 Treinos de Futevôlei"
+                width={220}
+                height={440}
+                className="h-auto drop-shadow-xl"
+              />
+            </div>
           </div>
         </RevealOnScroll>
 
