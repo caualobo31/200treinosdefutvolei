@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: "E se eu não gostar?",
-    a: "Você tem 30 dias de garantia incondicional. Não precisa justificar. Manda um e-mail e devolvemos 100% do valor.",
+    a: "Você tem 15 dias de garantia incondicional. Não precisa justificar. Manda um e-mail e devolvemos 100% do valor.",
   },
   {
     q: "Qual a diferença entre o Básico e o Premium?",

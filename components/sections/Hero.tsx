@@ -90,7 +90,7 @@ export function Hero() {
             <div className="flex flex-wrap items-center justify-center lg:justify-start gap-5 sm:gap-8">
               {[
                 { icon: <Zap className="w-4 h-4" />, text: "Acesso Imediato" },
-                { icon: <ShieldCheck className="w-4 h-4" />, text: "Garantia de 30 Dias" },
+                { icon: <ShieldCheck className="w-4 h-4" />, text: "Garantia de 15 Dias" },
                 { icon: <Smartphone className="w-4 h-4" />, text: "Funciona no Celular" },
               ].map(({ icon, text }) => (
                 <div

@@ -1,55 +1,50 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
-import { CHECKOUT_URL_PREMIUM } from "@/lib/constants";
 
-const screens = [
+const examples = [
   {
-    title: "O que você precisa hoje?",
-    label: "Tela inicial: 5 filtros principais sempre à mão.",
-    color: "#3B82F6",
-    items: ["Por Nível", "Por Tamanho", "Por Tempo", "Por Objetivo", "Por Cenário"],
+    src: "/exemplo 1.png",
+    alt: "Exemplo de treino do material — página 1",
+    label: "Exemplo 1",
   },
   {
-    title: "Turma mista + 45min + Iniciante",
-    label: "Combine filtros e veja só os treinos que se encaixam.",
-    color: "#10B981",
-    items: ["12 treinos encontrados", "Turma mista ✓", "45 min ✓", "Iniciante ✓"],
+    src: "/exemplo 2.png",
+    alt: "Exemplo de treino do material — página 2",
+    label: "Exemplo 2",
   },
   {
-    title: "Treino #47 — Futvôlei Dinâmico",
-    label: "Cada treino tem aquecimento, parte técnica, tática e jogo.",
-    color: "#F59E0B",
-    items: ["Aquecimento (8min)", "Técnico (15min)", "Tático (12min)", "Jogo livre (10min)"],
-  },
-  {
-    title: "Sortear Treino do Dia",
-    label: "Sem ideia? Toca em \"Sortear Treino do Dia\" e pronto.",
-    color: "#FF6B1A",
-    items: ["Treino #83 sorteado!", "Nível: Intermediário", "Tempo: 60min", "4-8 alunos"],
+    src: "/exemplo 3.png",
+    alt: "Exemplo de treino do material — página 3",
+    label: "Exemplo 3",
   },
 ];
 
 export function InsideApp() {
-  const [activeSlide, setActiveSlide] = useState(0);
+  const [active, setActive] = useState(0);
+
+  const prev = () => setActive((i) => (i === 0 ? examples.length - 1 : i - 1));
+  const next = () => setActive((i) => (i === examples.length - 1 ? 0 : i + 1));
 
   return (
     <section
       id="demo-app"
-      className="py-20 lg:py-32"
+      className="py-20 lg:py-28"
       style={{ backgroundColor: "var(--color-bg-sand)" }}
-      aria-label="Por dentro do app"
+      aria-label="Por dentro do material"
     >
-      <div className="max-w-6xl mx-auto px-5 sm:px-8">
+      <div className="max-w-4xl mx-auto px-5 sm:px-8">
 
         {/* Cabeçalho */}
         <RevealOnScroll>
-          <div className="text-center mb-12">
+          <div className="text-center mb-10">
             <h2
               className="font-display uppercase mb-4"
               style={{
-                fontSize: "clamp(28px, 4.5vw, 52px)",
+                fontSize: "clamp(26px, 4.5vw, 50px)",
                 color: "var(--color-text-dark)",
                 lineHeight: 1.1,
               }}
@@ -57,7 +52,7 @@ export function InsideApp() {
               Por dentro do material: filtre, escolha, aplique.
             </h2>
             <p
-              className="text-lg max-w-2xl mx-auto"
+              className="text-base sm:text-lg max-w-2xl mx-auto"
               style={{ color: "rgba(13,13,13,0.65)" }}
             >
               Não é treino aleatório. Não é vídeo solto do YouTube. É um acervo completo
@@ -66,108 +61,76 @@ export function InsideApp() {
           </div>
         </RevealOnScroll>
 
-        {/* Grid desktop / Carrossel mobile */}
-        {/* Desktop: 2x2 */}
-        <div className="hidden md:grid grid-cols-2 gap-6 mb-10">
-          {screens.map((screen, i) => (
-            <RevealOnScroll key={i} delay={i * 100}>
-              <AppScreenCard screen={screen} />
-            </RevealOnScroll>
-          ))}
-        </div>
+        {/* Carrossel */}
+        <RevealOnScroll delay={150}>
+          <div className="relative">
 
-        {/* Mobile: carrossel */}
-        <div className="md:hidden">
-          <div className="overflow-hidden mb-5">
-            <AppScreenCard screen={screens[activeSlide]} />
+            {/* Imagem ativa */}
+            <div
+              className="rounded-2xl overflow-hidden shadow-xl mx-auto"
+              style={{ maxWidth: "480px" }}
+            >
+              <Image
+                src={examples[active].src}
+                alt={examples[active].alt}
+                width={480}
+                height={680}
+                className="w-full h-auto object-cover"
+                priority={active === 0}
+              />
+            </div>
+
+            {/* Setas */}
+            <button
+              onClick={prev}
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1 sm:-translate-x-5 w-10 h-10 rounded-full flex items-center justify-center shadow-md cursor-pointer transition-opacity duration-150 hover:opacity-80"
+              style={{ backgroundColor: "var(--color-text-dark)", color: "var(--color-accent)" }}
+              aria-label="Exemplo anterior"
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+            <button
+              onClick={next}
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1 sm:translate-x-5 w-10 h-10 rounded-full flex items-center justify-center shadow-md cursor-pointer transition-opacity duration-150 hover:opacity-80"
+              style={{ backgroundColor: "var(--color-text-dark)", color: "var(--color-accent)" }}
+              aria-label="Próximo exemplo"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
+
           </div>
-          {/* Bolinhas de paginação */}
-          <div className="flex justify-center gap-2" role="tablist" aria-label="Slides do app">
-            {screens.map((_, i) => (
+
+          {/* Bolinhas */}
+          <div className="flex justify-center gap-2 mt-6 mb-10" role="tablist">
+            {examples.map((ex, i) => (
               <button
                 key={i}
-                onClick={() => setActiveSlide(i)}
+                onClick={() => setActive(i)}
                 role="tab"
-                aria-selected={i === activeSlide}
-                aria-label={`Ver tela ${i + 1}`}
+                aria-selected={i === active}
+                aria-label={ex.label}
                 className="rounded-full transition-all duration-200 cursor-pointer"
                 style={{
-                  width: i === activeSlide ? "24px" : "8px",
+                  width: i === active ? "28px" : "8px",
                   height: "8px",
                   backgroundColor:
-                    i === activeSlide
-                      ? "var(--color-text-dark)"
-                      : "rgba(13,13,13,0.3)",
+                    i === active ? "var(--color-text-dark)" : "rgba(13,13,13,0.25)",
                 }}
               />
             ))}
           </div>
-        </div>
+        </RevealOnScroll>
 
         {/* CTA */}
         <RevealOnScroll delay={300}>
-          <div className="text-center mt-10">
+          <div className="text-center">
             <Button variant="outline-sand" size="lg" href="#pricing">
-              Quero testar o app
+              Quero meus treinos prontos
             </Button>
           </div>
         </RevealOnScroll>
 
       </div>
     </section>
-  );
-}
-
-function AppScreenCard({ screen }: { screen: typeof screens[0] }) {
-  return (
-    <div
-      className="rounded-2xl overflow-hidden border"
-      style={{
-        backgroundColor: "#fff",
-        borderColor: "rgba(13,13,13,0.12)",
-      }}
-    >
-      {/* Barra do "app" */}
-      <div
-        className="px-4 py-3 flex items-center gap-2"
-        style={{ backgroundColor: screen.color }}
-      >
-        <div className="w-2.5 h-2.5 rounded-full bg-white opacity-70" />
-        <span className="text-xs font-bold text-white uppercase tracking-wider truncate">
-          {screen.title}
-        </span>
-      </div>
-      {/* Conteúdo */}
-      <div className="p-4">
-        {screen.items.map((item, j) => (
-          <div
-            key={j}
-            className="flex items-center gap-3 py-2 border-b last:border-b-0 text-sm"
-            style={{
-              borderColor: "rgba(13,13,13,0.08)",
-              color: "var(--color-text-dark)",
-            }}
-          >
-            <div
-              className="w-2 h-2 rounded-full flex-shrink-0"
-              style={{ backgroundColor: screen.color }}
-              aria-hidden="true"
-            />
-            {item}
-          </div>
-        ))}
-      </div>
-      {/* Legenda */}
-      <div
-        className="px-4 py-3 text-sm font-medium"
-        style={{
-          backgroundColor: "rgba(13,13,13,0.04)",
-          color: "rgba(13,13,13,0.6)",
-        }}
-      >
-        {/* Substituir por imagem real: /public/images/app-screen-{index+1}.png */}
-        {screen.label}
-      </div>
-    </div>
   );
 }
