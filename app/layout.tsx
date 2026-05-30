@@ -43,6 +43,16 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${anton.variable} ${inter.variable}`}>
       <head>
+        {/* Utmify — Pixel */}
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.pixelId = "6a1a6d9a0f57a6284f0eed48";
+          var a = document.createElement("script");
+          a.setAttribute("async", "");
+          a.setAttribute("defer", "");
+          a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+          document.head.appendChild(a);
+        `}} />
+
         {/* Utmify — rastreamento de UTMs */}
         <script
           src="https://cdn.utmify.com.br/scripts/utms/latest.js"
