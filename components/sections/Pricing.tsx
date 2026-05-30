@@ -78,7 +78,7 @@ export function Pricing() {
                 </span>
                 <div className="flex justify-center my-4">
                   <Image
-                    src="/mockup ftv puro.png"
+                    src="/mockup-ftv-puro.png"
                     alt="Mockup Plano Básico"
                     width={160}
                     height={320}
@@ -164,7 +164,7 @@ export function Pricing() {
                 </span>
                 <div className="flex justify-center my-4">
                   <Image
-                    src="/mockup treinos ftv.png"
+                    src="/mockup-treinos-ftv.png"
                     alt="Mockup Plano Premium"
                     width={160}
                     height={320}

@@ -3,7 +3,6 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
-import { CHECKOUT_URL_PREMIUM } from "@/lib/constants";
 
 const testimonials = [
   {

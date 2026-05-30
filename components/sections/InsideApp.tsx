@@ -7,17 +7,17 @@ import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 
 const examples = [
   {
-    src: "/exemplo 1.png",
+    src: "/exemplo-1.png",
     alt: "Exemplo de treino do material — página 1",
     label: "Exemplo 1",
   },
   {
-    src: "/exemplo 2.png",
+    src: "/exemplo-2.png",
     alt: "Exemplo de treino do material — página 2",
     label: "Exemplo 2",
   },
   {
-    src: "/exemplo 3.png",
+    src: "/exemplo-3.png",
     alt: "Exemplo de treino do material — página 3",
     label: "Exemplo 3",
   },

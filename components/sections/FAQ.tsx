@@ -3,7 +3,6 @@ import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
 import { Button } from "@/components/ui/Button";
-import { CHECKOUT_URL_PREMIUM } from "@/lib/constants";
 
 const faqs = [
   {

@@ -1,7 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/Button";
-import { CHECKOUT_URL_PREMIUM } from "@/lib/constants";
 
 function getTimeUntilMidnight() {
   const now = new Date();

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Zap, ShieldCheck, Smartphone } from "lucide-react";
 import { Button } from "@/components/ui/Button";
-import { CHECKOUT_URL_PREMIUM } from "@/lib/constants";
 
 export function Hero() {
   return (
@@ -70,7 +69,7 @@ export function Hero() {
             {/* Mockup — apenas mobile (abaixo da subheadline) */}
             <div className="lg:hidden mb-6 mx-auto" style={{ maxWidth: "320px" }}>
               <Image
-                src="/mockup treinos ftv.png"
+                src="/mockup-treinos-ftv.png"
                 alt="Interface do app +200 Treinos de Futevôlei mostrando os filtros de treino"
                 width={260}
                 height={520}
@@ -109,7 +108,7 @@ export function Hero() {
           <div className="hidden lg:flex flex-shrink-0 w-full max-w-sm xl:max-w-md">
             <div className="relative mx-auto" style={{ maxWidth: "380px" }}>
               <Image
-                src="/mockup treinos ftv.png"
+                src="/mockup-treinos-ftv.png"
                 alt="Interface do app +200 Treinos de Futevôlei mostrando os filtros de treino"
                 width={380}
                 height={760}
