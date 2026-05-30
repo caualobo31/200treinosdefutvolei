@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Anton, Inter } from "next/font/google";
+import { UTMForward } from "@/components/ui/UTMForward";
 import "./globals.css";
 
 const anton = Anton({
@@ -71,7 +72,10 @@ export default function RootLayout({
         {/* Hotjar (opcional para heatmap) */}
         {/* <script dangerouslySetInnerHTML={{ __html: `(function(h,o,t,j,a,r){...})(window,document,'https://static.hotjar.com/c/hotjar-XXXXXX.js')` }} /> */}
       </head>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {children}
+        <UTMForward />
+      </body>
     </html>
   );
 }
