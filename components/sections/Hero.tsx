@@ -9,14 +9,12 @@ export function Hero() {
       style={{ backgroundColor: "var(--color-bg-dark)" }}
       aria-label="Hero principal"
     >
-      {/* Background overlay com imagem de quadra */}
+      {/* Gradiente de fundo — substituir por foto real de futevôlei em /public/hero-bg.jpg quando disponível */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0"
         style={{
-          /* Placeholder Unsplash — substituir por /public/images/hero-bg.jpg quando disponível */
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=1920&q=80')",
-          opacity: 0.15,
+          background:
+            "radial-gradient(ellipse at 70% 50%, rgba(255,107,26,0.07) 0%, transparent 65%), radial-gradient(ellipse at 20% 80%, rgba(255,107,26,0.04) 0%, transparent 50%)",
         }}
         role="presentation"
         aria-hidden="true"
