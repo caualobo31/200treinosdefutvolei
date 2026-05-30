@@ -1,8 +1,8 @@
 // ─── URLs de Checkout ───────────────────────────────────────────────────────
 // Substituir pelos links reais da Hotmart, Kiwify ou similar
 
-export const CHECKOUT_URL_BASIC = "[INSERIR URL CHECKOUT BÁSICO]";
-export const CHECKOUT_URL_PREMIUM = "[INSERIR URL CHECKOUT PREMIUM]";
+export const CHECKOUT_URL_BASIC = "https://pay.wiapy.com/6a1a684e1e852dffa356ffea";
+export const CHECKOUT_URL_PREMIUM = "https://pay.wiapy.com/DDXbRAoy9c";
 
 // ─── Produto ─────────────────────────────────────────────────────────────────
 export const PRODUCT_NAME = "+100 Treinos de Futevôlei";
