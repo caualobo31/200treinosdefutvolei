@@ -43,6 +43,15 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${anton.variable} ${inter.variable}`}>
       <head>
+        {/* Utmify — rastreamento de UTMs */}
+        <script
+          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+          data-utmify-prevent-xcod-sck=""
+          data-utmify-prevent-subids=""
+          async
+          defer
+        />
+
         {/* Meta Pixel — substituir PIXEL_ID */}
         {/* <script dangerouslySetInnerHTML={{ __html: `!function(f,b,e,v,n,t,s){...}('PIXEL_ID');` }} /> */}
 
